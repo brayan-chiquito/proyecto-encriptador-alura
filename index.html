@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <img class="logo" src="imagenes/Logo.png">
+
+    </header>
+
+    <main>
+
+
+        <section class="seccion1">
+
+            <textarea class="texto-entrada" cols="60" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+    
+            <div>
+                <h6 class="informacion"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+    
+            <div class="botones">
+                <button class="boton1" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton2" onclick="btDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+        
+        <section>
+
+            <textarea id="texto-s" class="texto-salida" cols="25" rows="18"></textarea>
+            <div>
+                <img class="muñeco" id="muñeco" src="imagenes/Muñeco.png">
+            </div>
+            <div>
+                <button id="boton-copiar" class="copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+            </div>
+
+            <div>
+                <h5 id="mensaje1">Ningún mensaje fue <br> encontrado</h5>
+            </div>
+
+            <div>
+                <h3 id="mensaje2">Ingresa el texto que desees encriptar o <br> desencriptar.</h3>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
